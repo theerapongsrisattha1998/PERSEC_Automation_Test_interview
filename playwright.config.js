@@ -3,7 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 module.exports = defineConfig({
   timeout: 60000,
   testDir: './tests',
-  fullyParallel: true,
+  fullyParallel: process.env.CI ? false : true,
   workers: 1,       
   reporter: 'html',
   use: {
@@ -12,19 +12,25 @@ module.exports = defineConfig({
     video: 'on',
     trace: 'on',
   },
-
-  projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] }, 
-    },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] }, 
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] }, 
-    },
-  ],
+  projects: process.env.CI 
+    ? [
+        {
+          name: 'chromium',
+          use: { ...devices['Desktop Chrome'] }, 
+        }
+      ]
+    : [
+        {
+          name: 'chromium',
+          use: { ...devices['Desktop Chrome'] }, 
+        },
+        {
+          name: 'firefox',
+          use: { ...devices['Desktop Firefox'] }, 
+        },
+        {
+          name: 'webkit',
+          use: { ...devices['Desktop Safari'] }, 
+        },
+      ],
 });
