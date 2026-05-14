@@ -1,6 +1,7 @@
 # BullVPN Automation Testing with Playwright
 
-โปรเจกต์ทดสอบระบบเบื้องต้นของเว็บ BullVPN ด้วย JavaScript + Playwright
+โปรเจกต์ทดสอบระบบเบื้องต้นของเว็บ BullVPN 
+Stack : JavaScript + Playwright
 
 ## วิธีการติดตั้ง
 1. ติดตั้ง Library ทั้งหมด:
