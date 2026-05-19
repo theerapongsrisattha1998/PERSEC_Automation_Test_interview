@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theerapongsrisattha1998/PERSEC_Automation_Theeraphong.git"
+    "url": "git+https://github.com/theerapongsrisattha1998/PERSEC_Automation_Test_interview.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/theerapongsrisattha1998/PERSEC_Automation_Theeraphong/issues"
+    "url": "https://github.com/theerapongsrisattha1998/PERSEC_Automation_Test_interview/issues"
   },
-  "homepage": "https://github.com/theerapongsrisattha1998/PERSEC_Automation_Theeraphong#readme",
+  "homepage": "https://github.com/theerapongsrisattha1998/PERSEC_Automation_Test_interview#readme",
   "devDependencies": {
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",

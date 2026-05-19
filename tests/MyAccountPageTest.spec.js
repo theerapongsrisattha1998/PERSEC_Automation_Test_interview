@@ -2,7 +2,7 @@ const config = require("../config/config.js");
 const { test, expect } = require("@playwright/test");
 const { LoginPage } = require("../models/LoginPage.js");
 const { MyAccountPage } = require("../models/MyAccountPage.js");
-import { PATHS, ERROR_MESSAGES, HEADER_MESSAGES } from "../utils/constants.js";
+import { PATHS, ERROR_MESSAGES, HEADER_MESSAGES, ORDER_PACKAGE_PRICE } from "../utils/constants.js";
 
 test.describe(" BullVPN Playwright ", () => {
   test.describe.configure({ mode: "serial" });
@@ -51,7 +51,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packtwoYearBtn,
       myaccountPage.promtpayQrBtn,
-      myaccountPage.twoyearPrice,
+      ORDER_PACKAGE_PRICE.TWO_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -60,7 +60,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packtwoYearBtn,
       myaccountPage.creditCardBtn,
-      myaccountPage.twoyearPrice,
+      ORDER_PACKAGE_PRICE.TWO_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -69,7 +69,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packtwoYearBtn,
       myaccountPage.payPalBtn,
-      myaccountPage.twoyearPrice,
+      ORDER_PACKAGE_PRICE.TWO_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -78,7 +78,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packtwoYearBtn,
       myaccountPage.trueWalletBtn,
-      myaccountPage.twoyearPrice,
+      ORDER_PACKAGE_PRICE.TWO_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -87,7 +87,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packtwoYearBtn,
       myaccountPage.bankTransferBtn,
-      myaccountPage.twoyearPrice,
+      ORDER_PACKAGE_PRICE.TWO_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -96,7 +96,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneYearBtn,
       myaccountPage.promtpayQrBtn,
-      myaccountPage.oneyearPrice,
+      ORDER_PACKAGE_PRICE.ONE_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -105,7 +105,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneYearBtn,
       myaccountPage.creditCardBtn,
-      myaccountPage.oneyearPrice,
+      ORDER_PACKAGE_PRICE.ONE_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -114,7 +114,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneYearBtn,
       myaccountPage.payPalBtn,
-      myaccountPage.oneyearPrice,
+      ORDER_PACKAGE_PRICE.ONE_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -123,7 +123,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneYearBtn,
       myaccountPage.trueWalletBtn,
-      myaccountPage.oneyearPrice,
+      ORDER_PACKAGE_PRICE.ONE_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -132,7 +132,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneYearBtn,
       myaccountPage.bankTransferBtn,
-      myaccountPage.oneyearPrice,
+      ORDER_PACKAGE_PRICE.ONE_YEAR_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -141,7 +141,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneMonthBtn,
       myaccountPage.promtpayQrBtn,
-      myaccountPage.onemonthPrice,
+      ORDER_PACKAGE_PRICE.ONE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -150,7 +150,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneMonthBtn,
       myaccountPage.creditCardBtn,
-      myaccountPage.onemonthPrice,
+      ORDER_PACKAGE_PRICE.ONE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -159,7 +159,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneMonthBtn,
       myaccountPage.payPalBtn,
-      myaccountPage.onemonthPrice,
+      ORDER_PACKAGE_PRICE.ONE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -168,7 +168,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneMonthBtn,
       myaccountPage.trueWalletBtn,
-      myaccountPage.onemonthPrice,
+      ORDER_PACKAGE_PRICE.ONE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -177,7 +177,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packoneMonthBtn,
       myaccountPage.bankTransferBtn,
-      myaccountPage.onemonthPrice,
+      ORDER_PACKAGE_PRICE.ONE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -186,7 +186,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packsixMonthBtn,
       myaccountPage.promtpayQrBtn,
-      myaccountPage.sixmonthPrice,
+      ORDER_PACKAGE_PRICE.SIX_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -195,7 +195,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packsixMonthBtn,
       myaccountPage.creditCardBtn,
-      myaccountPage.sixmonthPrice,
+      ORDER_PACKAGE_PRICE.SIX_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -204,7 +204,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packsixMonthBtn,
       myaccountPage.payPalBtn,
-      myaccountPage.sixmonthPrice,
+      ORDER_PACKAGE_PRICE.SIX_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -213,7 +213,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packsixMonthBtn,
       myaccountPage.trueWalletBtn,
-      myaccountPage.sixmonthPrice,
+      ORDER_PACKAGE_PRICE.SIX_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -222,7 +222,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packsixMonthBtn,
       myaccountPage.bankTransferBtn,
-      myaccountPage.sixmonthPrice,
+      ORDER_PACKAGE_PRICE.SIX_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -231,7 +231,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packthreeMonthBtn,
       myaccountPage.promtpayQrBtn,
-      myaccountPage.threemonthPrice,
+      ORDER_PACKAGE_PRICE.THREE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -240,7 +240,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packthreeMonthBtn,
       myaccountPage.creditCardBtn,
-      myaccountPage.threemonthPrice,
+      ORDER_PACKAGE_PRICE.THREE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -249,7 +249,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packthreeMonthBtn,
       myaccountPage.payPalBtn,
-      myaccountPage.threemonthPrice,
+      ORDER_PACKAGE_PRICE.THREE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -258,7 +258,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packthreeMonthBtn,
       myaccountPage.trueWalletBtn,
-      myaccountPage.threemonthPrice,
+      ORDER_PACKAGE_PRICE.THREE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -267,7 +267,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packthreeMonthBtn,
       myaccountPage.bankTransferBtn,
-      myaccountPage.threemonthPrice,
+      ORDER_PACKAGE_PRICE.THREE_MONTH_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -276,7 +276,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packsevenDayBtn,
       myaccountPage.promtpayQrBtn,
-      myaccountPage.sevendayPrice,
+      ORDER_PACKAGE_PRICE.SEVEN_DAY_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -285,7 +285,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packsevenDayBtn,
       myaccountPage.creditCardBtn,
-      myaccountPage.sevendayPrice,
+      ORDER_PACKAGE_PRICE.SEVEN_DAY_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -294,7 +294,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packsevenDayBtn,
       myaccountPage.trueWalletBtn,
-      myaccountPage.sevendayPrice,
+      ORDER_PACKAGE_PRICE.SEVEN_DAY_PRICE,
       myaccountPage.checkPrice,
     );
   });
@@ -303,7 +303,7 @@ test.describe(" BullVPN Playwright ", () => {
     await myaccountPage.verifyPackageAndPayment(
       myaccountPage.packsevenDayBtn,
       myaccountPage.bankTransferBtn,
-      myaccountPage.sevendayPrice,
+      ORDER_PACKAGE_PRICE.SEVEN_DAY_PRICE,
       myaccountPage.checkPrice,
     );
   });

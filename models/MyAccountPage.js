@@ -42,12 +42,6 @@ class MyAccountPage {
     this.trueWalletBtn = page.locator("#headingTw");
     this.bankTransferBtn = page.locator("#headingBank");
     this.checkPrice = page.locator(".summary-amount");
-    this.twoyearPrice = "3,490 THB";
-    this.oneyearPrice = "1,990 THB";
-    this.onemonthPrice = "249 THB";
-    this.sixmonthPrice = "1,149 THB";
-    this.threemonthPrice = "649 THB";
-    this.sevendayPrice = "99 THB";
   }
 
   async clickTapMenu(tabMenu, page_path) {

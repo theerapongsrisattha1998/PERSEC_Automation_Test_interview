@@ -28,3 +28,12 @@ export const HEADER_MESSAGES = {
   HEADER_LOGIN_PAGE_MESSAGE: "Login to your account and Let's get started using a BullVPN.",
   HEADER_SIGNUP_PAGE_MESSAGE: "Register to protect your entire digital life and Get Free Trial.",
 };
+
+export const ORDER_PACKAGE_PRICE = {
+  TWO_YEAR_PRICE: '3,490 THB',
+  ONE_YEAR_PRICE: '1,990 THB',
+  ONE_MONTH_PRICE: '249 THB',
+  SIX_MONTH_PRICE: '1,149 THB',
+  THREE_MONTH_PRICE: '649 THB',
+  SEVEN_DAY_PRICE: '99 THB',
+};
